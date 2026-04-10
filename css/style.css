@@ -2077,6 +2077,11 @@ br.u-pc-only {
   margin-top: 40px;
   line-height: 1.8;
 }
+@media screen and (max-width: 768px) {
+  .school-cta__note {
+    font-size: 12px;
+  }
+}
 
 /* ==========================================================================
    Voice Section
@@ -2487,5 +2492,3 @@ br.u-pc-only {
     height: 8px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
