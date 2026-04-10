@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Feature Section (Guidance Policy)
+   ========================================================================== */
+.feature {
+    width: 100%;
+    padding: 200px 0;
+    background-image: url("../images/feature-bg.png");
+    background-size: cover;
+    background-position: center;
+    position: relative; // For decoration
+
+    &__container {
+        max-width: 1000px; // Slightly narrower for cards
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative; // Container for absolute positioning
+    }
+
+    &__header-wrap {
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        background-color: $color-green;
+        color: #fff;
+        padding: 15px 60px;
+        border-radius: 50px; // Pill shape
+        line-height: 1.2;
+        font-weight: 500;
+
+        &-eng {
+            font-size: clamp(24px, 2.0833vw, 40px); // 40px at 1920px
+        }
+
+        &-ja {
+            font-size: clamp(28px, 2.6041vw, 50px); // 50px at 1920px
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__card {
+        background-color: #fffce4;
+        border: 2px solid $color-green;
+        border-radius: 20px;
+        padding: 40px 20px;
+        text-align: center;
+        height: 100%; // Fill height
+        position: relative;
+        z-index: 1;
+
+        &-title {
+            font-size: clamp(16px, 1.6146vw, 29px); // 31px at 1920px
+            font-weight: 500;
+            color: $color-green;
+            line-height: 1.6;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            margin-top: 0;
+            border-bottom: 2px dotted $color-green; // Dotted Separator
+        }
+
+        &-text {
+            font-size: clamp(14px, 0.78125vw, 20px); // 15px at 1920px
+            line-height: 1.8;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: left; // Left alignment for readability
+        }
+    }
+
+    &__deco {
+        &--abc {
+            position: absolute;
+            bottom: -10px;
+            right: 80px;
+            width: clamp(100px, 10vw, 200px);
+            z-index: 2;
+        }
+    }
+
+    // Responsive
+    @media screen and (max-width: 768px) {
+        padding: 60px 0;
+
+        &__grid {
+            grid-template-columns: 1fr; // Single column
+            gap: 20px;
+        }
+
+        &__title {
+            padding: 12px 40px;
+        }
+
+        &__card {
+            padding: 30px 20px;
+        }
+
+        &__deco {
+            &--abc {
+                right: 0;
+                bottom: -30px;
+                width: 120px;
+            }
+        }
+    }
+}

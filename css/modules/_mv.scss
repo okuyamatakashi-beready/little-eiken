@@ -1,0 +1,246 @@
+// Keyframes moved to root level to avoid nesting issues
+@keyframes slideDownFade {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes decoEnter {
+    0% {
+        transform: translateY(50px) scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+
+.mv {
+    position: relative;
+    width: 100%;
+    background-color: $color-yellow; // Lower part background
+
+    @media screen and (max-width: $breakpoint-sp) {
+        margin-top: 64px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 280px; // Adjust coverage of green
+        background-color: $color-green;
+        z-index: 0;
+    }
+
+    &__container {
+        position: relative;
+        z-index: 1;
+        width: 89.58%; // 1720 / 1920
+        margin: 0 auto;
+        padding-top: 60px; // Space from top
+        padding-bottom: 60px; // Space from bottom
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 80px 100px; // Inner spacing
+        height: 51.5625vw; // 990px at 1920px (990 / 1920)
+        min-height: 780px; // Adjust height
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+        // Rounded corners restored
+        border-radius: 230px;
+
+        // --- Reverted LCP Optimization ---
+        background-color: #fff;
+        background-image: url("../images/mv_bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        // Ensure z-index context for children
+        // z-index: 1;
+
+        // Entrance Animation
+        animation: slideDownFade 0.8s ease-out forwards;
+    }
+
+    &__left {
+        width: 70%;
+        margin-left: 5%;
+        position: relative;
+        z-index: 2;
+
+        // Entrance Animation (Delayed)
+        opacity: 0;
+        animation: slideDownFade 0.8s ease-out 0.3s forwards;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 500;
+        color: $color-text-brown;
+        margin-bottom: 15px;
+        letter-spacing: 0.1em;
+    }
+
+    &__logo-text {
+        margin: 0 0 30px;
+        width: 28.125vw; // 540px at 1920px (540 / 1920 * 100)
+        max-width: 540px; // Cap at 540px if desired, or let it grow. Usually better to cap.
+        min-width: 200px;
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: $breakpoint-sp) {
+            width: 200px;
+            min-width: auto;
+        }
+    }
+
+    &__description {
+        font-size: clamp(14px, 1.6666vw, 32px);
+        line-height: 1.8;
+        color: $color-text-brown;
+        font-weight: 500;
+    }
+
+    &__description-highlight {
+        color: #009844;
+    }
+
+    &__right {
+        width: 50%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__main-img {
+        // Placeholder box for children image
+        width: 100%;
+        height: 500px;
+        background-color: #eee;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+
+    &__deco {
+        position: absolute;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        &--blocks {
+            top: -50px;
+            left: 0;
+        }
+
+        &--abc {
+            bottom: -350px;
+            left: -40px;
+            opacity: 0;
+
+            &.is-active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// Responsive adjustments (basic)
+@media screen and (max-width: $breakpoint-sp) {
+    .mv__container {
+        width: 100%;
+        max-width: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .mv__content {
+        flex-direction: column;
+        padding: 60px 20px 40px 20px;
+        border-radius: 0; // Removing border-radius for full screen width look
+
+        background-image: url("../images/mv_bg--sp.png");
+        background-position: top center;
+
+        height: auto; // Reset fixed VW height
+        min-height: 560px;
+        align-items: flex-start;
+    }
+
+    .mv__left {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex: 1;
+    }
+
+    .mv__subtitle,
+    .mv__logo-text {
+        // Reset padding if content has padding
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mv__logo-text {
+        width: 330px;
+        min-width: auto;
+    }
+
+    .mv__description {
+        display: none;
+    }
+
+    .mv__deco {
+        &--abc {
+            bottom: -120px; // Adjust position relative to content bottom
+            left: 0;
+            width: 150px;
+        }
+    }
+}
+
+.mv-sp-description {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-sp) {
+        display: block;
+        background-color: $color-yellow;
+        padding: 90px 20px 30px 20px;
+        text-align: center;
+        width: 100%;
+        color: $color-text-brown;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    &__highlight {
+        color: #009844;
+    }
+}

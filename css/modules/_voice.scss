@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Voice Section
+   ========================================================================== */
+.voice {
+    width: 100%;
+    padding: 100px 0;
+
+    &__header-wrap {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        display: inline-block;
+        background-color: $color-green;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 500;
+        padding: 15px 80px;
+        border-radius: 60px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 15px 0 15px;
+            border-color: $color-green transparent transparent transparent;
+        }
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__col {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        background-color: #fff;
+        border: 2px solid $color-green;
+        border-radius: 20px;
+        padding: 15px 30px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    &__icon-wrap {
+        flex-shrink: 0;
+        width: 100px;
+        height: auto;
+    }
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        flex-grow: 1;
+
+        @media screen and (max-width: 768px) {
+            border-top: dotted 4px $color-green;
+            padding-top: 10px;
+        }
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    &__signer {
+        text-align: right;
+        font-weight: 500;
+        font-size: 14px;
+        color: #333;
+    }
+
+    // Responsive
+    @media screen and (max-width: 768px) {
+        padding: 60px 0;
+
+        &__title {
+            font-size: 24px;
+            padding: 12px 60px;
+        }
+
+        &__grid {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__col {
+            width: 100%;
+            gap: 20px;
+        }
+
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            padding: 25px;
+            margin-top: 40px; // Room for overlapping icon
+
+            &:first-child {
+                margin-top: 20px;
+            }
+        }
+
+        &__icon-wrap {
+            width: 81px;
+            height: 91px; // Make square for better background masking
+            margin-top: -50px; // Pull up to overlap border (less than before)
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__signer {
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+}

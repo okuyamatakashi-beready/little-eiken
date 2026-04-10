@@ -1,0 +1,138 @@
+/* ==========================================================================
+   QA Section
+   ========================================================================== */
+.qa {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #C8A649; // Gold/Brownish
+    color: #fff;
+
+    &__container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__title-img {
+        height: 60px;
+        width: auto;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    &__title {
+        font-size: clamp(24px, 2.6041vw, 50px);
+        font-weight: 500;
+        color: #fff;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__box {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px 40px;
+        color: #333;
+    }
+
+    &__row {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+
+        &--q {
+            margin-bottom: 20px;
+        }
+
+        &--a {
+            margin-top: 20px;
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        width: clamp(30px, 2.9166vw, 56px); // 56px at 1920px
+        height: clamp(30px, 2.9166vw, 56px);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        color: transparent; // Hide text "Q" and "A"
+        font-size: 0; // Ensure text is hidden
+
+        &--q {
+            background-image: url("../images/Q.png");
+        }
+
+        &--a {
+            background-image: url("../images/A.png");
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-top: 0;
+        margin-bottom: 0;
+        // padding-top: 5px; // Removed to align start position with icon
+
+        &--q {
+            font-weight: 500;
+            font-size: clamp(18px, 1.4583vw, 28px);
+        }
+
+        &--a {
+            font-weight: 500;
+            font-size: clamp(14px, 1.0416vw, 20px);
+        }
+    }
+
+    &__line {
+        border: none;
+        border-top: 1px solid #ddd;
+        margin: 0;
+    }
+
+    // Responsive
+    @media screen and (max-width: 768px) {
+        padding: 60px 0;
+
+        &__header {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            // font-size: 24px; // Use clamp instead
+        }
+
+        &__box {
+            padding: 25px 20px;
+        }
+
+        &__row {
+            gap: 15px;
+        }
+
+        &__icon {
+            width: 32px;
+            height: 32px;
+            font-size: 16px;
+        }
+
+        &__text {
+            // font-size: 14px;
+
+            &--q {
+                // font-size: 16px;
+            }
+        }
+    }
+}

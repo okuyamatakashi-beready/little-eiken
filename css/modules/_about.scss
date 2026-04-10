@@ -1,0 +1,212 @@
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.about {
+    width: 100%;
+    position: relative;
+    background-color: $color-green;
+    padding: 100px 0;
+    overflow: visible; // Allow image to overflow
+
+    &__inner {
+        position: relative;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end; // Align content to right
+        align-items: center;
+    }
+
+    &__img-box {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 45%; // Adjust based on overlap
+        height: 100%;
+        z-index: 10;
+        pointer-events: none; // Let clicks pass through if covered?
+
+        // Placeholder positioning - need to adjust based on actual image
+        // Assuming about_people.png is the teacher and about_img.png is blocks
+    }
+
+    &__img-blocks {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 47.135vw; // 905px at 1920px
+        height: auto;
+        z-index: 0; // Behind content (1)
+    }
+
+    &__img-person {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        width: 29.9vw; // 574px at 1920px
+        height: auto;
+    }
+
+    &__content {
+        width: 61.46%; // 1180px / 1920px
+        max-width: 90%; // Responsive safety
+        background-color: #fff;
+        border-radius: 80px 0 0 80px; // Rounded left side
+        padding: 80px 100px 80px 150px; // Left padding accounts for image overlap
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title {
+        display: flex;
+        align-items: flex-end; // Align bottom of text/logo
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+
+        &-sup {
+            display: block;
+            width: 100%;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: $color-text-brown;
+        }
+
+        &-suffix {
+            font-size: 48px; // User request
+            font-weight: 500;
+            color: $color-text-brown;
+            margin-left: 10px;
+            line-height: 1.2;
+        }
+    }
+
+    &__logo {
+        height: 80px; // Adjust logo height to match text balance
+        width: auto;
+    }
+
+    &__headline {
+        font-size: 32px; // User request
+        color: $color-green;
+        font-weight: 500;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+
+    &__text {
+        font-size: clamp(16px, 1.0416vw, 20px);
+        line-height: 2;
+        color: #333;
+        margin-bottom: 30px;
+        font-weight: 500;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__mobile-header {
+        display: none;
+    }
+
+    // Responsive
+    @media screen and (max-width: $breakpoint-sp) {
+        padding: 60px 0 0;
+
+        &__inner {
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-bottom: 80px;
+        }
+
+        &__mobile-header {
+            display: block;
+            width: 100%;
+            padding: 0 20px 0px;
+            text-align: center;
+        }
+
+        &__mobile-sup {
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        &__mobile-title {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        &__mobile-logo {
+            height: 65px;
+            width: auto;
+        }
+
+        &__mobile-suffix {
+            color: #fff;
+            font-size: 24px;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
+        &__mobile-headline {
+            color: #fff;
+            font-size: clamp(20px, 5.8vw, 24px);
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        &__img-blocks {
+            display: none;
+        }
+
+        &__img-box {
+            position: relative;
+            width: 90%;
+            height: auto;
+            top: auto;
+            transform: none;
+            margin: 0 auto 0px;
+            z-index: 2;
+        }
+
+        &__img-person {
+            position: relative;
+            bottom: auto;
+            right: auto;
+            width: 100%;
+            height: auto;
+            border-radius: 40px;
+        }
+
+        &__content {
+            width: 100%;
+            border-radius: 40px 40px;
+            padding: 40px 20px 40px;
+            margin: 0 auto;
+            box-shadow: none;
+            background-color: #FFFEF0;
+        }
+
+        &__title,
+        &__headline {
+            display: none;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            margin-top: 0;
+        }
+    }
+}

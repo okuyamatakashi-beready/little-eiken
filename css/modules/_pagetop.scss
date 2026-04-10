@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Page Top Button
+   ========================================================================== */
+.pagetop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc; // Light grey as per reference
+    border-radius: 50%;
+    z-index: 990; // Below modals but above content
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+
+    // Arrow icon (Chevron Up)
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: 2.5px solid #fff;
+        border-right: 2.5px solid #fff;
+        transform: rotate(-45deg);
+        margin-top: 5px; // Balance vertical center visually
+    }
+
+    // Hover state
+    @media (hover: hover) {
+        &:hover {
+            background-color: #aaa;
+        }
+    }
+
+    // Visible state class
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    // Adjust position on mobile to avoid overlap if needed, or keep standard
+    @media screen and (max-width: 768px) {
+        width: 44px;
+        height: 44px;
+        bottom: 15px;
+        right: 15px;
+
+        &::before {
+            width: 8px;
+            height: 8px;
+        }
+    }
+}
