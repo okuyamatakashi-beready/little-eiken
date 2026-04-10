@@ -81,14 +81,14 @@
         &::after {
             content: "";
             position: absolute;
-            bottom: -15px;
+            bottom: -13px;
             left: 50%;
             transform: translateX(-50%);
             width: 0;
             height: 0;
             border-style: solid;
             border-width: 15px 15px 0 15px;
-            border-color: #FEF1B5 transparent transparent transparent;
+            border-color: #feec99 transparent transparent transparent;
         }
     }
 

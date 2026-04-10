@@ -1336,7 +1336,7 @@ br.u-pc-only {
   line-height: 2.2;
   font-weight: 500;
   margin-top: 0;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.1em;
 }
 .vision__message {
   font-size: 20px;
@@ -1616,14 +1616,14 @@ br.u-pc-only {
 .teacher__card-title::after {
   content: "";
   position: absolute;
-  bottom: -15px;
+  bottom: -13px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 15px 15px 0 15px;
-  border-color: #FEF1B5 transparent transparent transparent;
+  border-color: #feec99 transparent transparent transparent;
 }
 .teacher__card-sub {
   display: block;
@@ -1895,6 +1895,9 @@ br.u-pc-only {
   font-size: 18px;
   text-align: center;
 }
+.school__td--name-small {
+  font-size: 16px;
+}
 .school__td--address {
   font-size: 14px;
   line-height: 1.6;
@@ -2065,6 +2068,14 @@ br.u-pc-only {
   .school-cta__btn-sub {
     font-size: 12px;
   }
+}
+.school-cta__note {
+  text-align: left;
+  font-family: "Kiwi Maru", serif;
+  font-size: 18px;
+  color: rgb(35, 24, 21);
+  margin-top: 40px;
+  line-height: 1.8;
 }
 
 /* ==========================================================================
@@ -2362,7 +2373,7 @@ br.u-pc-only {
   .float-cta {
     width: 100px;
     height: 100px;
-    top: 40px;
+    top: 10px;
     right: 20px;
     font-size: 12px;
   }

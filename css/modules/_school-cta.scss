@@ -92,4 +92,13 @@
             font-size: 12px;
         }
     }
+
+    &__note {
+        text-align: left;
+        font-family: "Kiwi Maru", serif;
+        font-size: 18px;
+        color: rgb(35, 24, 21);
+        margin-top: 40px;
+        line-height: 1.8;
+    }
 }

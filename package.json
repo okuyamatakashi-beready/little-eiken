@@ -1,0 +1,12 @@
+{
+  "name": "little-eiken",
+  "version": "1.0.0",
+  "description": "little-eiken website",
+  "scripts": {
+    "watch": "sass --watch css/style.scss:css/style.css --style expanded --source-map",
+    "build": "sass css/style.scss:css/style.css --style expanded --source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}
