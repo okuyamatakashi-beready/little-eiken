@@ -132,6 +132,10 @@
         &:nth-child(even) {
             background-color: #fff;
         }
+
+        &:last-child .school__td {
+            border-bottom: 1px solid #ddd;
+        }
     }
 
     &__td {
