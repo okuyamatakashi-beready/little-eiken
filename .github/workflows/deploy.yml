@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           # 【重要】以下をエックスサーバーの公開フォルダパスに変更してください
           # 例: /llc-beready.com/public_html/little-eiken.com/
-          server-dir: /llc-beready.com/public_html/little-eiken.com/
+          server-dir: /llc-beready.com/public_html/stg.little-eiken.llc-beready.com/
           exclude: |
             **/.git*
             **/.git*/**
