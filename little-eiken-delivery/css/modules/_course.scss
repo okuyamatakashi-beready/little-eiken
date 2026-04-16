@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Course Section
+   ========================================================================== */
+.course {
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    &__container {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        min-height: 400px; // Ensure height for image
+        display: flex;
+        justify-content: center; // Center content
+        align-items: center;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+    }
+
+
+
+    &__sub {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        margin-bottom: 20px;
+        letter-spacing: 0.1em;
+    }
+
+    &__logo-wrap {
+        margin-bottom: 20px;
+
+        .course__logo {
+            width: clamp(240px, 20.8333vw, 400px); // 400px at 1920px
+            height: auto;
+        }
+    }
+
+    &__title {
+        font-size: clamp(32px, 2.6041vw, 50px); // 50px at 1920px
+        font-weight: 500;
+        color: $color-green;
+        margin-top: 10px;
+        letter-spacing: 0.05em;
+    }
+
+    &__img-wrap {
+        position: absolute;
+        bottom: -100px;
+        right: 0; // Default to 0 for safety
+        width: clamp(300px, 28vw, 540px);
+        z-index: 1;
+        pointer-events: none;
+
+        @media screen and (min-width: 1400px) {
+            right: -100px; // Slightly out on very wide screens
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    // Responsive
+    @media screen and (max-width: 1100px) {
+        &__img-wrap {
+            width: 25vw;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__img-wrap {
+            width: 220px;
+            right: 0;
+            bottom: -50px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0px 0 0px;
+
+        &__container {
+            flex-direction: column;
+            padding: 0;
+            min-height: 310px;
+        }
+
+        &__img-wrap {
+            position: relative;
+            bottom: auto;
+            right: auto;
+            margin-top: -60px;
+            width: 42%;
+            margin-left: auto;
+            margin-right: 0px; // Keep away from right edge
+            margin-bottom: -60px;
+        }
+
+        &__logo-wrap .course__logo {
+            height: 80px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+}

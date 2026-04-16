@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+// Smartphone only display
+.u-sp-only {
+    display: none !important;
+
+    @media screen and (max-width: $breakpoint-sp) {
+        display: block !important;
+    }
+}
+
+// PC only display
+.u-pc-only {
+    display: block !important;
+
+    @media screen and (max-width: $breakpoint-sp) {
+        display: none !important;
+    }
+}
+
+// Inline version for BR tags etc.
+br.u-sp-only {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-sp) {
+        display: inline;
+    }
+}
+
+br.u-pc-only {
+    display: inline;
+
+    @media screen and (max-width: $breakpoint-sp) {
+        display: none;
+    }
+}

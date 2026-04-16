@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Teacher Section
+   ========================================================================== */
+.teacher {
+    width: 100%;
+    padding: 200px 0 200px;
+    background-color: #fdd000; // Yellow background
+
+    &__header-wrap {
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        background-color: #f6921e; // Orange
+        color: #fff;
+        padding: 15px 80px;
+        border-radius: 60px; // Pill shape
+        line-height: 1.2;
+
+        &-sm {
+            font-size: 39px;
+            font-weight: 500;
+        }
+
+        &-lg {
+            font-size: 49px;
+            font-weight: 500;
+            margin-left: -5px;
+        }
+    }
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__inner {
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 40px 40px 90px;
+        width: 100%;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__item {
+        width: 48%;
+    }
+
+    &__card-title {
+        background-color: #feec99; // Pale Yellow
+        border-radius: 15px;
+        padding: 30px 20px;
+        text-align: center;
+        font-size: clamp(20px, 1.7708vw, 34px); // 34px at 1920px
+        font-weight: 500;
+        color: #333;
+        position: relative;
+        margin-bottom: 30px;
+        margin-top: 0;
+        line-height: 1.4;
+
+        /* Align Height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: clamp(110px, 7.29vw, 140px); // 140px at 1920px
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 15px 0 15px;
+            border-color: #feec99 transparent transparent transparent;
+        }
+    }
+
+    &__card-sub {
+        display: block;
+        font-size: 18px;
+        margin-top: 5px;
+        font-weight: normal;
+    }
+
+    &__card-text {
+        font-size: clamp(14px, 1.0416vw, 20px); // 20px at 1920px
+        line-height: 2;
+        color: #333;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    // Responsive
+    @media screen and (max-width: 768px) {
+        padding: 60px 0;
+
+        &__title {
+            padding: 10px 40px;
+
+            &-sm {
+                font-size: 24px;
+            }
+
+            &-lg {
+                font-size: 32px;
+            }
+        }
+
+        &__inner {
+            padding: 40px 20px;
+        }
+
+        &__row {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__card-title {
+            font-size: 18px;
+            padding: 20px;
+            min-height: auto; // Reset height on mobile
+        }
+    }
+}

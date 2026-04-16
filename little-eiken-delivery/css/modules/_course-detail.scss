@@ -1,0 +1,404 @@
+/* ==========================================================================
+   Course Detail Slider
+   ========================================================================== */
+.course-detail {
+    width: 100%;
+    // Padding is handled inside slides or container if needed
+}
+
+.course-slider {
+    width: 100%;
+    height: auto;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: transparent; // Hide default icon color
+        background-color: transparent; // Remove circle bg if not needed or adjust
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; // or contain/80%
+        margin-top: -40px; // Center
+
+        &::after {
+            display: none; // Hide default icon font
+        }
+
+        &:hover {
+            opacity: 0.8;
+            background-color: transparent;
+        }
+    }
+
+    .swiper-button-next {
+        background-image: url("../images/arrow_next.png");
+        right: clamp(10px, 4.166vw, 80px); // 80px at 1920px
+    }
+
+    .swiper-button-prev {
+        background-image: url("../images/arrow_prev.png");
+        left: clamp(10px, 4.166vw, 80px); // 80px at 1920px
+    }
+
+    // Responsive Navigation
+    @media screen and (max-width: 1400px) {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 60px;
+            height: 60px;
+            margin-top: -30px;
+        }
+
+        .swiper-button-next {
+            right: 10px;
+        }
+
+        .swiper-button-prev {
+            left: 10px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: flex; // Show on SP
+            width: 40px;
+            height: 40px;
+            background-size: 25px auto;
+            margin-top: -20px;
+        }
+
+        .swiper-button-prev {
+            left: 5px;
+        }
+
+        .swiper-button-next {
+            right: 5px;
+        }
+    }
+
+    // Ensure slides are equal height
+    .swiper-wrapper {
+        align-items: stretch;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+}
+
+.course-slide {
+    height: 100%; // Fill the slide height
+    padding: 0px 100px 80px; // Standard padding to clear arrows
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; // Change to column to stack content properly with height 100%
+    justify-content: flex-start; // Top align content
+    align-items: stretch; // Stretch width
+    background-image: url("../images/slide-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 1400px) {
+        padding: 0 80px 80px; // Increase padding to avoid arrow overlap
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 20px 60px; // Mobile padding
+    }
+
+    &--conversation {
+        background-color: #7DBE4E; // Green
+    }
+
+    &--eiken {
+        background-color: #FEE665; // Yellow
+
+        .course-slide__sub {
+            color: #333;
+        }
+
+        .course-slide__title {
+            color: #333;
+        }
+
+        .course-slide__icon {
+            background-color: #FEE665;
+            color: #fff;
+            border: 2px solid #fff; // Invert for yellow bg? 
+            // Actually design shows Yellow Circle with White L
+        }
+    }
+
+    &--global {
+        background-color: #D4AC38; // Gold/Brown
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__header {
+        margin-bottom: 30px; // Spacing below title (effectively)
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__sub {
+        font-size: clamp(18px, 2.0833vw, 40px); // 40px at 1920px
+        font-weight: 500;
+        margin-bottom: 0px; // Reset
+        margin-top: 80px; // Top spacing
+        position: relative;
+        display: inline-block;
+
+        // Mobile: Align Titles
+        @media screen and (max-width: 768px) {
+            min-height: 2.8em; // Space for 2 lines
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1.4;
+        }
+
+        // V-shape decoration
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 4px;
+            background-color: #fff;
+
+            @media screen and (max-width: 768px) {
+                width: 50px;
+                height: 2px;
+            }
+
+        }
+
+        &::before {
+            right: 100%;
+            margin-right: 20px;
+            transform: rotate(45deg); // \ direction
+
+            @media screen and (max-width: 768px) {
+                margin-right: 5px;
+            }
+        }
+
+        &::after {
+            left: 100%;
+            margin-left: 20px;
+            transform: rotate(-45deg); // / direction
+
+            @media screen and (max-width: 768px) {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__title {
+        background-color: #FFFEF0;
+        display: inline-block;
+        padding: 15px 60px;
+        border-radius: 60px;
+        line-height: 1;
+        margin-top: 20px; // Space between sub and title
+
+        &-img {
+            height: clamp(40px, 3.6458vw, 70px); // 70px at 1920px
+            width: auto;
+            vertical-align: bottom;
+        }
+    }
+
+    // Icon removed as it is part of the image now
+
+    &__card {
+        background-color: #FFFEF0;
+        border-radius: 30px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        text-align: left;
+        border: 2px solid rgba(0, 0, 0, 0.1); // Subtle border
+    }
+
+    &__row {
+        display: flex;
+        border-bottom: 2px solid #7DBE4E;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__label {
+        width: 30%;
+        background-color: #D0E6B6; // Light Green default
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: clamp(20px, 1.5625vw, 30px); // 30px at 1920px
+        color: #333;
+        text-align: center;
+    }
+
+    &__content {
+        width: 70%;
+        padding: 20px;
+        background-color: #FFFEF0;
+        min-height: 202px;
+
+        @media screen and (max-width: 768px) {
+            min-height: auto;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            padding-left: 1.2em;
+            margin-bottom: 10px;
+            font-weight: 500;
+            line-height: 1.8;
+            font-size: clamp(16px, 1.25vw, 24px); // 24px at 1920px
+
+            &::before {
+                content: "・";
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+
+    &__footer {
+        color: #fff;
+        font-size: clamp(20px, 1.5625vw, 30px); // 30px at 1920px
+        font-weight: 500;
+    }
+
+    &__price {
+        margin-left: 30px;
+    }
+
+    &__tax {
+        font-size: clamp(14px, 1.0416vw, 20px); // 20px at 1920px
+        font-weight: normal;
+    }
+
+    &__note {
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+        text-align: right;
+    }
+
+    // Specific Styles per Slide
+    &--eiken {
+        .course-slide__header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .course-slide__sub {
+            color: #333;
+
+            &::before,
+            &::after {
+                background-color: #333;
+            }
+        }
+
+        .course-slide__title {
+            color: #333;
+        }
+
+        .course-slide__icon {
+            background-color: #FEE665;
+            color: #fff;
+        }
+
+        // Adjust
+        .course-slide__row {
+            border-bottom-color: #FEE665;
+        }
+
+        // Yellow border
+        .course-slide__label {
+            background-color: #FDF5C6;
+        }
+
+        // Light Yellow
+        .course-slide__footer {
+            color: #333;
+        }
+    }
+
+    &--global {
+        .course-slide__icon {
+            background-color: #D4AC38;
+        }
+
+        .course-slide__row {
+            border-bottom-color: #D4AC38;
+        }
+
+        .course-slide__label {
+            background-color: #EBDCB0;
+        }
+
+        // Light Gold
+    }
+
+    // Responsive
+    @media screen and (max-width: 768px) {
+        &__title {
+            font-size: 24px;
+            padding: 10px 30px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        &__row {
+            flex-direction: column;
+        }
+
+        &__label {
+            width: 100%;
+            padding: 15px;
+        }
+
+        &__content {
+            width: 100%;
+            padding: 20px;
+        }
+
+        &__footer {
+            font-size: 15px;
+        }
+
+        &__price {
+            display: block;
+            margin-left: 0;
+            margin-top: 5px;
+        }
+    }
+}

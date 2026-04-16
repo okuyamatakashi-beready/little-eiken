@@ -1,0 +1,593 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1775810808224,
+    "data": [
+        {
+            "type": "folder",
+            "name": "css"
+        },
+        {
+            "type": "folder",
+            "name": "images"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 96328,
+            "hash": "6e7d7c6a46d4897f8be157eefe540715bcec7878695dde1f8a86ddde5cf3bc45"
+        },
+        {
+            "type": "folder",
+            "name": "js"
+        },
+        {
+            "type": "file",
+            "name": "package-lock.json",
+            "size": 14090,
+            "hash": "d3d498a6a69229a664d660270c028b87e400d79e85dcdeea0b6435f42ba14c51"
+        },
+        {
+            "type": "file",
+            "name": "package.json",
+            "size": 329,
+            "hash": "12f308978fcf466a34db0f6e4533cb5ca845a3799c26ad2b37a883a4c1eddeb7"
+        },
+        {
+            "type": "folder",
+            "name": "css/modules"
+        },
+        {
+            "type": "file",
+            "name": "css/style.css",
+            "size": 48859,
+            "hash": "6014d1d5a39f61f56e0451261bf5405dc4a70ae98f96a5d91a602df09d0f0945"
+        },
+        {
+            "type": "file",
+            "name": "css/style.css.map",
+            "size": 11043,
+            "hash": "29fef1b621834eb9108e56249a5dae46cc30f6eebbb0e5fea899c7a622c8e2e3"
+        },
+        {
+            "type": "file",
+            "name": "css/style.scss",
+            "size": 2278,
+            "hash": "5b29685c3f0152555dd605164c7ec85f8ba2ba16f2a31ee82add88680cc48835"
+        },
+        {
+            "type": "file",
+            "name": "images/A.png",
+            "size": 659,
+            "hash": "9c95c46f71442010a5ac342a93a103998fbdbe089910fd601d38f048f0437a78"
+        },
+        {
+            "type": "file",
+            "name": "images/Q.png",
+            "size": 716,
+            "hash": "717e826c8c15493ba200963568d1e01b7d8c52badcc8d71a5479f39069a37381"
+        },
+        {
+            "type": "file",
+            "name": "images/about__img--sp.png",
+            "size": 28576,
+            "hash": "df9e8fcbae72b11f0bb51ad55c4c1a9667e31a21ed5259e2c8408f40858c5bc2"
+        },
+        {
+            "type": "file",
+            "name": "images/about_img.png",
+            "size": 478273,
+            "hash": "9130a734b5c24a44dc052e859d3d773759a82985b7d90610b6e0baf36de513f0"
+        },
+        {
+            "type": "file",
+            "name": "images/about_people.png",
+            "size": 269976,
+            "hash": "3b2e1d2795d48b29dff1a4a9d88cf1adc574ffc9429a4aa86d0d15d12aca0982"
+        },
+        {
+            "type": "file",
+            "name": "images/answer.png",
+            "size": 1196,
+            "hash": "e27975f8f9ce454e840ea387a610be3bfbdbe7f7ebb2ddd87eb1a379c979392d"
+        },
+        {
+            "type": "file",
+            "name": "images/arrow_next.png",
+            "size": 762,
+            "hash": "0efa0e7fc7de9f54acc4bda573bcfb030c9a4c1e9fa9c4fe3de71df968825937"
+        },
+        {
+            "type": "file",
+            "name": "images/arrow_prev.png",
+            "size": 688,
+            "hash": "5799031d3f26e3fcd5f545d2aec4e8c1910fd12c8825f9b4ac5893158aadbd5d"
+        },
+        {
+            "type": "file",
+            "name": "images/bnr01-sp.png",
+            "size": 8846,
+            "hash": "b1e4669fc3d8ea759ae9aaf503036679bc72daa868f986bde83aed7608650fb8"
+        },
+        {
+            "type": "file",
+            "name": "images/bnr02-sp.png",
+            "size": 5526,
+            "hash": "22e503745886916b4334c7642cc487b09c3bf14d3de9e05d6be2d32c271dd4bd"
+        },
+        {
+            "type": "file",
+            "name": "images/bnr01.png",
+            "size": 27020,
+            "hash": "e895b23e7fbd40bf33d1b8285f18f555ae381d77076408b22dded89d69a4031e"
+        },
+        {
+            "type": "file",
+            "name": "images/bnr02.png",
+            "size": 15703,
+            "hash": "474d5db320cf2e1ebb3171c5327c0085d9b7a630b5ed2f16239d8692c1bb7dfc"
+        },
+        {
+            "type": "file",
+            "name": "images/cource_img.png",
+            "size": 67874,
+            "hash": "4409a6c8ef7e3a8a47f2430058e75e3da957bac66b264c883df059a4a0b078b8"
+        },
+        {
+            "type": "file",
+            "name": "images/course-slide__title01.png",
+            "size": 3402,
+            "hash": "ae82cbaa80c74d51d07d21d7d97f2c45b281506530cc93d02455915d9986108c"
+        },
+        {
+            "type": "file",
+            "name": "images/course-logo.png",
+            "size": 5003,
+            "hash": "4c731b1d2c90c2b8e8cf2386666c3c0db9bceca2d4aa03592cfa75f2418f8032"
+        },
+        {
+            "type": "file",
+            "name": "images/course-slide__title02.png",
+            "size": 5979,
+            "hash": "121844c0181c68a33882a35a87a43db8e0d1b85784b45ad65808da525de78310"
+        },
+        {
+            "type": "file",
+            "name": "images/course-slide__title03.png",
+            "size": 4745,
+            "hash": "318880e07d5718000f9a640ef08ecfd0913e1619d423545ffb90d8c489631ed6"
+        },
+        {
+            "type": "file",
+            "name": "images/course_img.png",
+            "size": 730271,
+            "hash": "c2b8ba7f5858d34987402261aa6534fd22fcdf722570b437b0b958ba5d1e2eaf"
+        },
+        {
+            "type": "file",
+            "name": "images/favicon.ico",
+            "size": 9662,
+            "hash": "84e91ed27735a9982ae13d5d277f8d372821d2566636b35b9177d917c68f680c"
+        },
+        {
+            "type": "file",
+            "name": "images/feature-abc.png",
+            "size": 7080,
+            "hash": "6b9c9b8567681a2b187082214c4a2a79f7cbda19055f027661b95af2f7ebca65"
+        },
+        {
+            "type": "file",
+            "name": "images/feature-bg.png",
+            "size": 75812,
+            "hash": "554c79626d8f45cd6124c020f6d768537898fd477caccbeda908ddcde68be19e"
+        },
+        {
+            "type": "file",
+            "name": "images/footer-company.png",
+            "size": 14507,
+            "hash": "023ba5cee97ac4085c6de93d2f0bf06ea3ad769297388c15f9d83e3d80f7d3be"
+        },
+        {
+            "type": "file",
+            "name": "images/gakken-logo-green.png",
+            "size": 2138,
+            "hash": "d00d966920f6353fe43d38cb3436da9fe7f98a7166c676f76e50aaad0752413e"
+        },
+        {
+            "type": "file",
+            "name": "images/gakken-logo-white.svg",
+            "size": 1872,
+            "hash": "8cfcb9ac54ea9779967bee0661294c58b5e2303cc438f3542250d9f3db5f6ec7"
+        },
+        {
+            "type": "file",
+            "name": "images/lesson.png",
+            "size": 340450,
+            "hash": "bc4081a80925af088dc76472f647b163ce624d46067efc46ed6e75ffa37bac99"
+        },
+        {
+            "type": "file",
+            "name": "images/little-white.png",
+            "size": 2358,
+            "hash": "5e636f539f6b1018702cb6205be2196ef3abcd4240654b27b8a95453ad9cc1bf"
+        },
+        {
+            "type": "file",
+            "name": "images/logo-white.png",
+            "size": 1965,
+            "hash": "e4c8aaab0430e50602d299bf68a22090eee9b83eb8182f6cc3ba3e5a31d4d7ba"
+        },
+        {
+            "type": "file",
+            "name": "images/logo-white.svg",
+            "size": 12510,
+            "hash": "9f9f1acc05b0c999214072d1885d82a57d64f81653a26671a0917ae4a733c17a"
+        },
+        {
+            "type": "file",
+            "name": "images/logo.png",
+            "size": 4589,
+            "hash": "6949f3344ee40b7808291c82b25ab19ce7ab5038e8497da855c730a297135e11"
+        },
+        {
+            "type": "file",
+            "name": "images/logo.svg",
+            "size": 13624,
+            "hash": "ded139295e2d1a601b6a478ef2c0ba153221770f63d8877ac6fdc77be46aa72b"
+        },
+        {
+            "type": "file",
+            "name": "images/mask.png",
+            "size": 2685,
+            "hash": "44a6fe598f608666ba5f79e1273ef062f307cecbd0c2f05e2a7ab9258d3d279f"
+        },
+        {
+            "type": "file",
+            "name": "images/mv-abc--sp.png",
+            "size": 118598,
+            "hash": "eb367ca6d8aaa4fc7d38b296f6d8c5ad7d1b5c554bf0147516a47905b126a2cc"
+        },
+        {
+            "type": "file",
+            "name": "images/mv-abc.png",
+            "size": 73720,
+            "hash": "6481605cfdc1dc463d4455479e931aac95b2e7b7d8e4fc17e9005f4d1dac86ac"
+        },
+        {
+            "type": "file",
+            "name": "images/mv-bg.jpg",
+            "size": 853595,
+            "hash": "1df66a262ad3c623f1cecda171ff1881ade3071f5d68d9025c25f05e1601311b"
+        },
+        {
+            "type": "file",
+            "name": "images/mv__cta-bg.png",
+            "size": 1562,
+            "hash": "90c2c26c185707a538d4844218f76668e2848ae1e5590319ed20b47a34d6c230"
+        },
+        {
+            "type": "file",
+            "name": "images/mv_bg--sp.png",
+            "size": 56312,
+            "hash": "b360b3eca842d85608152a4909aec688a039bf8b734413924c7b01545ef23335"
+        },
+        {
+            "type": "file",
+            "name": "images/mv_bg.jpg",
+            "size": 458112,
+            "hash": "d0211909d3a08f1ac1706fb04e7ce4df7b6065e71e5cc4200e2ddc7ec772dbba"
+        },
+        {
+            "type": "file",
+            "name": "images/mv_bg.png",
+            "size": 359848,
+            "hash": "929156f524b0acde3d05bbb3f858edfbe722ae4ff7915013306e66106b47e479"
+        },
+        {
+            "type": "file",
+            "name": "images/qa-img.png",
+            "size": 9483,
+            "hash": "3fc935618362de833b84c2fb9b353edb8cc3e8f1ce38106aca950c8439710031"
+        },
+        {
+            "type": "file",
+            "name": "images/question.png",
+            "size": 1276,
+            "hash": "11ca0bc4d72f60dc5e822215b8feb2621ef11e00b91bd23e1c15be4bed7b4b45"
+        },
+        {
+            "type": "file",
+            "name": "images/school__course-item--conv.png",
+            "size": 639,
+            "hash": "d1e3ce7740fee3981b99c85bf15ae04e04b26921d1848ba42dc5fbc77668397e"
+        },
+        {
+            "type": "file",
+            "name": "images/school__course-item--eiken.png",
+            "size": 641,
+            "hash": "7fa7d64d28031822bc02d276a27343aff17074efbc26b7a52c6e699ec5b91379"
+        },
+        {
+            "type": "file",
+            "name": "images/school__course-item--global.png",
+            "size": 635,
+            "hash": "ec4939f6810e60a610a28e1ae4ff7803e8f228ea62d30ca37b7388cd3687e1ea"
+        },
+        {
+            "type": "file",
+            "name": "images/slide-bg.png",
+            "size": 56767,
+            "hash": "e29e9cb616d5f89139216c1bb9cdaac0a277dc01ba5c701c35c6a0989f4b5048"
+        },
+        {
+            "type": "file",
+            "name": "images/slide01-sp.png",
+            "size": 3532,
+            "hash": "fb5496793f09ca3104b940bb7cbf613540e2b183e1d6858605451e05e86b59ab"
+        },
+        {
+            "type": "file",
+            "name": "images/slide01.png",
+            "size": 24174,
+            "hash": "fbd74c3e7788629005694218f6a86663617058c1e84a200bc66c11210de63205"
+        },
+        {
+            "type": "file",
+            "name": "images/slide02-sp.png",
+            "size": 9539,
+            "hash": "b499d37c3c0ee76861835ca0e6c7787283c8b52e6cc16544290aab03aa56d1ab"
+        },
+        {
+            "type": "file",
+            "name": "images/slide02.png",
+            "size": 217314,
+            "hash": "077a9247fdfd2d953ffcbd4c5db42306f0102c72d2595e568e0982751f64ec20"
+        },
+        {
+            "type": "file",
+            "name": "images/slide03-sp.png",
+            "size": 4526,
+            "hash": "f5d82c4d28276717696e1b7d49f7b3ee1789becd81e93877ed2ac69cc7d06781"
+        },
+        {
+            "type": "file",
+            "name": "images/slide03.png",
+            "size": 22656,
+            "hash": "b0396963cdbcc1b2cf0b44941ea412143a0da5a4ba4b51fd589664aeb8cb248f"
+        },
+        {
+            "type": "file",
+            "name": "images/vision__badge01.png",
+            "size": 1144,
+            "hash": "8ec67738a4b9665e6986bb56951e369eb91b5a66a56562c7991ac48b95ef7ea1"
+        },
+        {
+            "type": "file",
+            "name": "images/vision__badge02.png",
+            "size": 1504,
+            "hash": "9dafd144a2d3716ae4ade4d7929ef2e07441ae84ca2ff441ee1c88fe81ce420d"
+        },
+        {
+            "type": "file",
+            "name": "images/vision__badge03.png",
+            "size": 1500,
+            "hash": "8a429a9aa4988c4c264ca74f3f9e495e2deb9b7574900bd05c61120ff857fce5"
+        },
+        {
+            "type": "file",
+            "name": "images/vision__card01.png",
+            "size": 63872,
+            "hash": "4031b014545f4a67d172f25c0ed05d715e2f3b0340eebf354a41312b70f6cdad"
+        },
+        {
+            "type": "file",
+            "name": "images/vision__card02.png",
+            "size": 39284,
+            "hash": "a9f58709cc1f8cc4e3909aa8ea6642dce08bd1f4c05145826506d55d22a4cfd6"
+        },
+        {
+            "type": "file",
+            "name": "images/vision__card03.png",
+            "size": 62256,
+            "hash": "a755123f35f343d90eb7bbdfa907521f20a57704a47d076d4b4ce006ba6309b7"
+        },
+        {
+            "type": "file",
+            "name": "images/voice_icon_01.png",
+            "size": 2165,
+            "hash": "9bc21592dce4dd48bf2894e0c47562b7d2928b13b53e9def5d54bb70b083816c"
+        },
+        {
+            "type": "file",
+            "name": "images/voice_icon_02.png",
+            "size": 2138,
+            "hash": "158daaf70fb3ecded69315cf49afed4f79cbbe09c627dc0b794bd39465f68ac1"
+        },
+        {
+            "type": "file",
+            "name": "images/voice_icon_03.png",
+            "size": 2109,
+            "hash": "e8c2d7efc1800035b2770a0f5930c41e24cae979dbd9f0ed4bae06c4e054b042"
+        },
+        {
+            "type": "file",
+            "name": "images/voice_icon_04.png",
+            "size": 1888,
+            "hash": "d4c0842cf85dc8e9d90850fc14673d075cb788281862c7befcda85b551935479"
+        },
+        {
+            "type": "file",
+            "name": "images/voice_icon_05.png",
+            "size": 2078,
+            "hash": "ba5179a91f15c99005211f408bceda9bcf575aaf3da531a272c2f6a0f64b1cf8"
+        },
+        {
+            "type": "file",
+            "name": "js/script.js",
+            "size": 8848,
+            "hash": "9529b6e2d018f44dce7b14909cfd725c8df5a38ebe71c60061294160bde9aa5d"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_about.scss",
+            "size": 5029,
+            "hash": "42161c686014d758e05186265ae44c19dd0e4d4e319c0975cbc4cb464765bae3"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_animation.scss",
+            "size": 960,
+            "hash": "755ff65e5cdcb40cb90fe628b4fecd0784b335089ac2f90196c2d77ccc102b66"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_common-modules.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_common.scss",
+            "size": 780,
+            "hash": "ee12ba0c6dccd9bab4d54eaaf28a35ae6057f8a2640c97c6f1f6b1a8f96f8c0c"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_contact.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_course-detail.scss",
+            "size": 9160,
+            "hash": "eaf89f2b08b77ebd91292cc391b2171121f32e1418d7f2e704210a4e4b54a337"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_course.scss",
+            "size": 2586,
+            "hash": "699ba210181412728a2874b65a7dd820cdef59c562ee7b4bcb5f3f1986751909"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_difference.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_domain.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_feature.scss",
+            "size": 2900,
+            "hash": "71a9be1b347ff9a67d5033398d02def00a8f91f8491736d0e388f0b73a2c01b6"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_float-btn.scss",
+            "size": 1487,
+            "hash": "3c32a2708ed814b894ffcd628fe74c5e88e2de76e7e6b14778bf0a82ae05b084"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_footer.scss",
+            "size": 1500,
+            "hash": "4666094dec09e0fb06501a180b56c450a35e3e7dd2420ee0db4fba1cb3f13f47"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_flow.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_header.scss",
+            "size": 7686,
+            "hash": "6431591df32a150d1c1af50b23236454635a5ba7680e1f3a78f2fc0fe9a76657"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_mv.scss",
+            "size": 5289,
+            "hash": "e6096a2a94c76af91a35c40a0aa30830fcb56f81f3e92c79b6020e5eec977449"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_news.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_pagetop.scss",
+            "size": 1468,
+            "hash": "8ac3514e1f32a507aebe418578bd66eb67d78f969a6ae75225be9ab5fd04e162"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_pickup.scss",
+            "size": 2765,
+            "hash": "e1a0f56af80f8cab020dd7c2b76ff48be5df49e7b2b568db06f5288c09eeee17"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_qa.scss",
+            "size": 2760,
+            "hash": "3dd8cf95aa5a019f3da9e96355958d6b4f7f03a1ef0aae29050cf32b8ad887dc"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_schedule.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_school-cta.scss",
+            "size": 2218,
+            "hash": "61bb80f36e86aba30b7e161938f5cc177d3ec9761a83b6313d4d79f9982983bb"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_school.scss",
+            "size": 5815,
+            "hash": "fe764c92d15d7edd3208231092d64b0f73a7b798bef8fde221ccfaf3e7b77e78"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_service.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_target.scss",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_teacher.scss",
+            "size": 3183,
+            "hash": "32d1ce6d48832c546eec0856ff96d346daa5ac3b3c21b8b50815e83bb4a53941"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_vision.scss",
+            "size": 4775,
+            "hash": "88421a2ab3b7d9bf51e04e26d474a1ca2d10c684e9906aee8d23e4b5598675b8"
+        },
+        {
+            "type": "file",
+            "name": "css/modules/_voice.scss",
+            "size": 3279,
+            "hash": "fc0be510a739fec9f281e0face67b8dc813b30b0789bf497dc0359c355015845"
+        }
+    ]
+}

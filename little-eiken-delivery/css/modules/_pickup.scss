@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Pickup Section
+   ========================================================================== */
+.pickup {
+    width: 100%;
+    padding: 60px 0 100px 0;
+    overflow: hidden;
+    background-color: #ffd500;
+
+    @media screen and (max-width: $breakpoint-sp) {
+        padding: 20px 0 30px 0;
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0;
+    }
+
+    &__slider-wrap {
+        width: 100%;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (max-width: $breakpoint-sp) {
+            padding: 0;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .swiper-slide {
+        width: 50%; // Adjusted from 62.4% to show more side slides
+        height: auto;
+        opacity: 0.4; // Show inactive slides
+        transition: opacity 0.3s;
+        cursor: pointer;
+
+        @media screen and (max-width: $breakpoint-sp) {
+            width: 235px; // Fixed width for SP
+            opacity: 0; // Hide inactive slides fully or partially? User said "Don't show".
+        }
+
+        &.swiper-slide-active {
+            opacity: 1;
+
+            @media screen and (max-width: $breakpoint-sp) {
+                opacity: 1;
+            }
+        }
+
+
+        // Image styles
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        @media screen and (min-width: 769px) {
+            width: 600px;
+            opacity: 0.5;
+
+            &.swiper-slide-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    /* Navigation Arrows */
+    &__nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px; // Adjust based on image size
+        height: 50px;
+        cursor: pointer;
+        z-index: 10;
+        // background-color: $color-green; // Removed for image
+        // border-radius: 50%; // Removed for image
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // color: #fff; // Removed
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; // Ensure aspect ratio
+        }
+
+        @media screen and (max-width: $breakpoint-sp) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__prev {
+        left: -70px;
+
+        @media screen and (max-width: $breakpoint-sp) {
+            left: 2%; // Inside viewport
+        }
+    }
+
+    &__next {
+        right: -70px;
+
+        @media screen and (max-width: $breakpoint-sp) {
+            right: 2%; // Inside viewport
+        }
+    }
+}
